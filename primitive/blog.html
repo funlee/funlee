@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>博客-全栈工程师养成指南</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="head-nav">
+		<div class="wrap clearfix">
+			<a href="index.html" class="back-logo">
+				<img src="image/logo.svg" alt="">
+			</a>
+			<ul class="clearfix">
+				<li><a href="#">首页</a></li>
+				<li class="active"><a href="#">博客</a></li>
+				<li><a href="#">留言</a></li>
+				<li><a href="#">实验室</a></li>
+				<li><a href="#">前端收藏</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section class="mdfix blog">
+		<div class="wrap clearfix">
+			<article class="mt20">
+				<div class="art-item">
+					<div class="art-top">
+						<h3><a href="#">这是一个测试标题</a></h3>
+						<p class="file">作者 : <a href="#">funlee</a>栏目 : <a href="#">学习笔记</a></p>
+						<div class="art-date clearfix">
+							<span class="day">13</span>
+							<span class="year fr">
+								<em>DEC</em>
+								<em>2016</em>
+							</span>
+						</div>
+					</div>
+					<div class="art-mid clearfix">
+						<a href="#" class="art-img">
+							<img src="image/article/4b2344f9ab77bf4da1d48c2b2c6a0dd6.png" alt="">
+						</a>
+						<div class="text-wrap">
+							<p>关于上传，总是有很多可以说道的。</p>
+							<p>16年底，公司项目番茄表单的前端部分，开始了从传统的jquery到vue 2.0的彻底重构。但是上传部分，无论是之前的传统版本，还是Vue新版本，都是在使用着FileAPI这款优秀的开源库，只是进行了简单的directive化。为什么呢？因为兼容性。没办法，公司项目不等同于个人项目，必须要考虑大多数浏览器。否则，上传部分完全可以利用Vue-Resource以及FormData来抛开对FileAPI的依赖。这让我深感遗憾，幸好这个简单的遗憾在个人博客Vue化重构的时候得以弥补。</p>
+						</div>
+					</div>
+					<div class="art-foot">
+						<i class="fa fa-tags" aria-hidden="true"></i>
+						<a href="#">前端</a>
+						<a href="#">Vue</a>
+						<span class="fr">
+							<i class="fa fa-eye" aria-hidden="true"></i>200
+							<i class="fa fa-comment" aria-hidden="true"></i>100
+						</span>
+					</div>
+				</div>
+			</article>
+			<aside class="mt20">
+				<div class="list-wrap">
+					<div class="list">
+						<p class="search"><input type="text" placeholder="输入关键词搜索"></p>
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</div>
+					<ul class="sel-nav">
+						<li>全部博文</li>
+						<li>前端开发</li>
+						<li class="inner">移动前端</li>
+						<li class="inner">前端分享</li>
+						<li class="inner">前端文档</li>
+						<li>学习笔记</li>
+						<li>心灵鸡汤</li>
+						<li class="active"></li>
+					</ul>
+				</div>
+				<div class="list-wrap">
+					
+				</div>
+			</aside>
+		</div>
+	</section>
+</body>
+</html>
