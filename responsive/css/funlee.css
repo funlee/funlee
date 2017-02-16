@@ -1,5 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 .logo-img{
 	height: 50px;
 	width: auto;
 	margin: -15px 20px 0 0;
+}
+.home{
+	width: 100%;
+	background: url(../image/banner.jpg) no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+.banner h1{
+	
 }
