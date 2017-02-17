@@ -1,13 +1,21 @@
+/*公用样式*/
 *{
 	margin: 0;
 	padding: 0;
 }
-/*公用样式*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{zoom:1}
 .fr{
 	float: right;
 }
 .mt70{
 	margin-top: 70px;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+.ml15{
+	margin-left: 15px;
 }
 .logo-img{
 	height: 50px;
@@ -17,6 +25,7 @@
 .footer{
 	background: #212220;
 	color: #e9e9e9;
+	padding-bottom: 30px;
 }
 .footer .h5{
 	padding: 0.1rem 0;
@@ -27,6 +36,11 @@
 }
 .footer a:hover{
 	color: #48A0DC;
+}
+.list{
+	margin-bottom: 20px;
+	background: #fff;
+	position: relative;
 }
 /*首页-index.html*/
 .index .page{
@@ -56,7 +70,7 @@
 }
 
 /*博客-blog.html*/
-.blog .item{
+.blog .list{
 	margin-bottom: 20px;
 	padding:20px;
 	background: #fff;
@@ -78,16 +92,19 @@
 	border-bottom: 1px solid #e8e8e8;
 	cursor: pointer;
 }
+.index .article{
+	margin-bottom: 20px;
+}
 /*留言板-message.html*/
 .message .mes-text{
 	background: #fff;
-	padding: 0 0.4rem 0.2rem;
-	margin-bottom: 0.2rem;
+	margin-bottom: 20px;
+	padding: 0 0 0.2rem;
 }
 .message .mes-til{
 	position: relative;
 	top: 0;
-	left: -0.4rem;
+	left: 0rem;
 	height: 0.6rem;
 	overflow: hidden;
 }
@@ -117,6 +134,14 @@
 	margin-left: 2.8rem;
 	line-height: 0.6rem;
 }
+.message .mes-area{
+	padding:0 30px;
+}
+@media (max-width:768px) {
+	.message .mes-area{
+		padding:0 8px;
+	}
+}
 .message .mes-text textarea{
 	display: block;
     width: 100%;
@@ -134,14 +159,14 @@
 .message .mes-user .btn{
 	width: 100%;
 }
-.message .mes-item-wrap{
-	background: #fff;
-	padding: 0;
+.message .mitem-wrap{
+	margin-bottom: 20px;
 }
 .message .mes-item{
 	position: relative;
 	border-bottom: 1px solid #e8e8e8;
 	padding: 0.2rem 0.2rem 0;
+	background: #fff;
 }
 .message .mes-item:hover{
 	background:#fafafa;
@@ -156,8 +181,89 @@
 .message .mes-item p{
 	margin-left: 70px;
 }
-
-
+.message .github-op{
+	width: 100%;
+}
+.message .github-op span{
+	display: block;
+	width: 33.333333%;
+	float: left;
+}
+.message .github-op span:hover{
+	background: #fafafa;
+}
+.message .github-op span em{
+	display: block;
+	text-align: center;
+}
+.message .mes-user{
+	padding-right: 40px;
+}
+@media (max-width: 768px) {
+	.message .mes-user{
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+.message .avater{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	padding: 6px;
+	border-radius: 50%;
+	margin-left: -40px;
+	background: rgba(255,255,255,0.3);
+}
+@media (max-width:768px) {
+	.message .avater{
+		width: 2rem;
+		height: 2rem;
+		top: 0.8rem;
+		left: 50%;
+		margin-left: -1rem;
+	}
+}
+.message .avater img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.message .avatar-til{
+	margin: 36px 0 16px;
+	text-align: center;
+	color: #428bca;
+}
+.message .hot-bles{
+	background: #fff;
+	margin-bottom: 20px;
+}
+.message .hot-bles .h4{
+	padding:10px;
+	margin-bottom: 0;
+	border-bottom: 1px solid #e8e8e8;
+}
+/*实验室-element.html*/
+.element .ele-item{
+	background: #fff;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.element .ele-item p{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.element .ele-des{
+	height: 64px;
+	overflow: hidden;
+}
+.element .ele-item h5{
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
 
 
 
