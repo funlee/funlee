@@ -1,6 +1,6 @@
 $(function(){
 	
-  var canvas = document.getElementById('page1-bg'),
+  var canvas = document.getElementById('pageBg'),
       ctx = canvas.getContext('2d')
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;

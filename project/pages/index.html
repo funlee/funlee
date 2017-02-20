@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>首页|funlee's explore space</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/funlee.css">
+        <link rel="stylesheet" href="../styles/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/funlee.css">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -24,8 +24,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="image/logo-brand.png" alt="funlee" class="logo-img">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../images/logo-brand.png" alt="funlee" class="logo-img">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -36,7 +36,7 @@
                         <li><a href="blog.html">博客</a></li>
                         <li><a href="element.html">实验室</a></li>
                         <li><a href="message.html">留言板</a></li>
-                        <li><a href="#">前端收藏</a></li>
+                        <li><a href="book.html">书虫</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,16 +62,48 @@
                 </div>
             </form>  
         </div>
-        <div class="other-page">
-            <div class="about-me">
-                <h2 class="text-center">关于我</h2>
-                <p class="text-center">90后天秤座普通男青年，毕业于一所美丽的大学(swust)，学的土木工程，却［误入歧途］，迷上代码</p>
-                <p class="text-center">与钢筋混凝土打了四年交道，思维僵固、偏执...遂改行，从事WEB前端开发</p>
-                <p class="text-center">喜欢敲代码的感觉,相信编程是一门艺术</p>
-                <p class="text-center">业余时间沉迷与中国历史、科幻</p>
+        <div class="me-des">
+            <div class="container">
+                <h2 class="text-center">WHO AM I</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="me-img idnetity-img">
+                            <!-- <img src="../images/idnetity.gif" alt=""> -->
+                        </div>
+                        <p>Funlee</p>
+                        <p>高级动物，人科，人属，智人种，公元1992年生于太阳系-第三行星（N285594，E104.4448）</p>
+                        <p>生性呆板、贱萌，脑袋中无时无刻不充斥这奇怪的idea，选择恐惧症，典型天秤气质</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="me-img work-img">
+                           <!--  <img src="../images/work.gif" alt=""> -->
+                        </div>
+                        <p>历史迷、程序控</p>
+                        <p>公元2015年夏接触前端，在『中国火锅之都』怒刷副本，闲暇之余在本站打怪升级，目标成为合格的全栈工程师</p>
+                        <p>已习得技能HTML(5)，CSS(3)，JAVASCRIPT，PHP，MYSQL，NODE.JS</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="me-img dream-img">
+                            <!-- <img src="../images/dream.gif" alt=""> -->
+                        </div>
+                        <p>科幻、文艺追梦者</p>
+                        <p>去过西藏、南极、月球和火星是我觉得有机会一定要实现的dream</p>
+                        <p>梦想开间面馆，和customer讲述自己环游地球、穿梭宇宙的所见所闻</p>
+                    </div>
+                </div>
+                <h2 class="text-center">WHERE FIND ME</h2>
+                <div class="container">
+                    <div class="social text-center">
+                        <a href="#">Weibo</a>
+                        <a href="#">Zhihu</a>
+                        <a href="#">Github</a>
+                        <a href="#">Wechat</a>
+                        <a href="#">QQ</a>
+                        <a href="#">instagram</a>
+                    </div>      
+                </div>
             </div>
         </div>
-        
         <footer class="footer">
             <div class="container">
                 <p class="h5">FUNLEE · 时感人生的虚无，却无法抑制的沸腾</p>
@@ -84,15 +116,13 @@
             </div>
         </footer>
 
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/fontSize.js"></script>
-        <script src="js/pageBg.js"></script>
-        <script>
-            $(function() {
-                resizeRoot();
-                $('.first-page').css({'height': $(window).height()});
-            });
+        <script type="text/javascript" src="../sea-modules/sea.js"></script>
+        <script type="text/javascript" src="../seajs.config.js"></script>
+        <script type="text/javascript" src="../sea-modules/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            seajs.use(['../scripts/index.js'], function(index){
+                index.init();
+            })
         </script>
     </body>
 </html>

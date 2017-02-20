@@ -1,12 +1,28 @@
 /*公用样式*/
+body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	position: relative;
+}
 *{
 	margin: 0;
 	padding: 0;
+}
+.navbar-default:hover{
+	background: #1E2943;
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	-o-transition: background-color 0.3s;
+	transition: background-color 0.3s;
 }
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{zoom:1}
 .fr{
 	float: right;
+}
+.fl{
+	float: left;
 }
 .mt70{
 	margin-top: 70px;
@@ -23,7 +39,7 @@
 	margin: -15px 20px 0 0;
 }
 .footer{
-	background: #212220;
+	background: #22252a;
 	color: #e9e9e9;
 	padding-bottom: 30px;
 }
@@ -43,18 +59,24 @@
 	position: relative;
 }
 /*首页-index.html*/
-.index .page{
-	position: relative;
-}
-
-.index .search{
+.index .pageBg{
 	position: absolute;
-	width: 100%;
-	top: 50%;
+	top: 0;
 	left: 0;
-	margin-top: -1rem;
+	z-index: -1;
+}
+.index .first-page{
+	position: relative;
+	width: 100%;
+	overflow:hidden;
+}
+.index .first-page .search{
+	margin-top: 16.8%;
 }
 @media (max-width: 768px) {
+	.index .first-page .search{
+		margin-top: 66%;
+	}
 	.index input[data-show="big"]{
 		display: none;
 	}
@@ -62,13 +84,20 @@
 		width: 50%;
 	    box-sizing: border-box;
 	    float: left;
+	    margin-top: 40px;
 	}
-  
 }
-.index .page2{
-	background-image: linear-gradient(to bottom, #4f7f9b, #293c55);
+.index .other-page{
+	background: #fff;
+	color: #333;
 }
-
+.index .about-me{
+	width: 100%;
+	overflow: hidden;
+}
+.index .about-me h2{
+	margin-top: 30px;
+}
 /*博客-blog.html*/
 .blog .list{
 	margin-bottom: 20px;
