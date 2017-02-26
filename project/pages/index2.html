@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>首页|funlee's explore space</title>
+        <link rel="stylesheet" href="../styles/funlee.css">
+        <link rel="stylesheet" href="../styles/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/jquery.fullPage.css">
+    </head>
+    <body class="index">
+        <div id="fullpage">
+            <ul class="menu">
+                <li class="active" data-menuanchor="page1"><a href="#page1" title="首页">首页</a></li>
+                <li data-menuanchor="page2"><a href="#page2" title="">我们的服务：四“为”</a></li>
+                <li data-menuanchor="page3"><a href="#page3" title="">我们的服务：三“免”</a></li>
+                <li data-menuanchor="page4"><a href="#page4" title="">我们的服务：二“零”</a></li>
+                <li data-menuanchor="page5"><a href="#page5" title="">我们的服务：一“赠送”</a></li>
+                <li data-menuanchor="page6"><a href="#page6" title="">我们的优势</a></li>
+                <li data-menuanchor="page7"><a href="#page7" title=""><span>共享推广资源</span></a></li>
+                <li data-menuanchor="page8"><a href="#page8" title=""><span>联系我们</span></a></li>
+            </ul>
+            <div class="section page1">
+                <form role="form" class="search">
+                    <div class="container">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" placeholder="请输入关键词">
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" class="btn btn-primary" value="百度">
+                            <input type="submit" class="btn btn-primary" data-show="big" value="谷歌">
+                            <input type="submit" class="btn btn-primary" data-show="big" value="知乎">
+                            <input type="submit" class="btn btn-primary" data-show="big" value="Github">
+                            <input type="submit" class="btn btn-primary" data-show="big" value="微博">
+                            <input type="submit" class="btn btn-primary" data-show="big" value="音乐">
+                            <input type="submit" class="btn btn-primary" data-show="big" value="京东">
+                            <input type="submit" class="btn btn-primary" data-show="big" value="淘宝">
+                            <input type="submit" class="btn btn-primary" value="网盘">
+                        </div>
+                    </div>
+                </form>  
+                <a href="#page2" class="mouse">
+                    <span>鼠标滚动查看更多</span>
+                </a>
+            </div>
+            <div class="section page2">
+
+                <a href="#page3" class="mouse">
+                    <span>鼠标滚动查看更多</span>
+                </a>
+            </div>
+            <div class="section page3">
+
+                <a href="#page4" class="mouse">
+                    <span>鼠标滚动查看更多</span>
+                </a>
+            </div>
+            <div class="section page4">
+
+                <a href="#page5" class="mouse">
+                    <span>鼠标滚动查看更多</span>
+                </a>
+            </div>
+            <div class="section page5">
+                
+                <a href="#page6" class="mouse">
+                    <span>鼠标滚动查看更多</span>
+                </a>
+            </div>
+            <div class="section page6">
+                
+                <a href="#page7" class="mouse">
+                    <span>鼠标滚动查看更多</span>
+                </a>
+            </div>
+            <div class="section page7">
+                
+                <a href="#page8" class="mouse">
+                    <span>鼠标滚动查看更多</span>
+                </a>
+            </div>
+            <div class="section page8">
+                
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="../sea-modules/jquery.min.js"></script>
+        <script type="text/javascript" src="../sea-modules/jquery.fullPage.js"></script>
+        <script>
+            $(function() {
+                $('#fullpage ').fullpage({
+                    'verticalCentered': false,
+                    'css3': true,
+                    anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+                    menu: '.menu'
+                });
+            })
+        </script>
+    </body>
+</html>
