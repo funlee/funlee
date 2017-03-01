@@ -8,12 +8,10 @@
 
 seajs.config({
     paths: {
-        //modules: 'sea-modules',
-        app: '../scripts'
+        ele: '../scripts',
+        mod:''
     },
     alias: {
-        pageBg: 'app/pageBg.js',
-        //第三方库文件
         jquery: 'jquery.min.js'
         
     }

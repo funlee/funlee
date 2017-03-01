@@ -33,8 +33,8 @@
                         <li class="active">
                             <a href="index.html">首页 <span class="sr-only">(current)</span></a>
                         </li>
-                        <li><a href="blog.html">博客</a></li>
-                        <li><a href="element.html">实验室</a></li>
+                        <li><a href="http://init.funlee.cn" target="_blank">博客</a></li>
+                        <li><a href="element.html">天赋树</a></li>
                         <li><a href="message.html">留言板</a></li>
                         <li><a href="book.html">书虫</a></li>
                     </ul>
@@ -43,21 +43,22 @@
         </nav>
         <div class="first-page">
             <canvas id="pageBg" class="pageBg"></canvas>
-            <form role="form" class="search">
+            <form role="form" class="search" target="_blank" action="https://www.baidu.com/s" method="get">
                 <div class="container">
                     <div class="form-group">
-                        <input type="text" class="form-control input-lg" placeholder="请输入关键词">
+                        <input type="text" class="form-control input-lg search-text" placeholder="请输入关键词" name="wd" id="kw">
                     </div>
                     <div class="text-center">
-                        <input type="submit" class="btn btn-primary" value="百度">
-                        <input type="submit" class="btn btn-primary" data-show="big" value="谷歌">
-                        <input type="submit" class="btn btn-primary" data-show="big" value="知乎">
-                        <input type="submit" class="btn btn-primary" data-show="big" value="Github">
-                        <input type="submit" class="btn btn-primary" data-show="big" value="微博">
-                        <input type="submit" class="btn btn-primary" data-show="big" value="音乐">
-                        <input type="submit" class="btn btn-primary" data-show="big" value="京东">
-                        <input type="submit" class="btn btn-primary" data-show="big" value="淘宝">
-                        <input type="submit" class="btn btn-primary" value="网盘">
+                        <span class="btn btn-primary" data-url="https://www.baidu.com/" data-href="https://www.baidu.com/s?wd=+funlee">百度</span>
+                        <span class="btn btn-primary" data-url="https://www.google.com/" data-href="http://www.google.com/search?q=funlee">谷歌</span>
+                        <span class="btn btn-primary" data-url="https://www.zhihu.com/" data-href="https://www.zhihu.com/search?q=funlee">知乎</span>
+                        <span class="btn btn-primary" data-url="https://github.com/" data-href="https://github.com/search?utf8=%E2%9C%93&q=funlee">Github</span>
+                        <span class="btn btn-primary" data-url="http://weibo.com/" data-href="http://s.weibo.com/weibo/funlee">微博</span>
+                        <span class="btn btn-primary" data-url="http://music.163.com/" data-href="http://music.163.com/#/search/m/?s=funlee&type=1">网易云</span>
+                        <span class="btn btn-primary" data-url="https://www.jd.com/" data-href="http://search.jd.com/Search?enc=utf-8&keyword=funlee">京东</span>
+                        <span class="btn btn-primary" data-url="https://www.taobao.com/" data-href="https://s.taobao.com/search?q=funlee">淘宝</span>
+                        <span class="btn btn-primary" data-url="http://weixin.sogou.com/" data-href="http://weixin.sogou.com/weixin?type=2&query=funlee&ie=utf8">微信</span>
+                        <span class="btn btn-primary" data-url="http://www.panc.cc/" data-href="http://www.panc.cc/s/funlee/td_0">网盘</span>
                     </div>
                 </div>
             </form>  
@@ -111,14 +112,13 @@
                     <li><a>友情链接</a></li>
                     <li><a href="http://byr.wiki/" target="_blank">北邮人导航</a></li>
                     <li><a href="https://zhuanlan.zhihu.com/xiaxiaozheng" target="_blank">小正说事</a></li>
+                    <li><a href="https://zhuanlan.zhihu.com/appsos" target="_blank">APP指南</a></li>
                 </ul>
                 <p>Copyright © 2017-2099 funlee. All Rights Reserved.V.1.1.0.</p>
             </div>
         </footer>
 
         <script type="text/javascript" src="../sea-modules/sea.js"></script>
-        <script type="text/javascript" src="../seajs.config.js"></script>
-        <script type="text/javascript" src="../sea-modules/bootstrap.min.js"></script>
         <script type="text/javascript">
             seajs.use(['../scripts/index.js'], function(index){
                 index.init();

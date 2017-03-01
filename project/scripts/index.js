@@ -4,11 +4,12 @@
  * @Description: index.html首页入口
  */
 define(function(require) {
-    var jQuery = require('jquery');
-    require('pageBg');
+    var $ = require('../sea-modules/jquery.min.js');
+    require('./pageBg.js');
+    require('./search.js')
     var Index = {
         init: function() {
-            $('.first-page').css({'height': $(window).height()});
+            
         }
     }
     return Index;

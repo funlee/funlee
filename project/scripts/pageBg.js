@@ -1,4 +1,6 @@
 define(function(require) {
+    require("../sea-modules/jquery.min.js");
+    $('.first-page').css({'height': $(window).height()});
     var canvas = document.getElementById('pageBg');
     var ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
