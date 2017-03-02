@@ -117,7 +117,7 @@ body {
 	.index .first-page .search {
 		margin-top: 66%;
 	}
-	.index input[data-show="big"] {
+	.index span[data-show="big"] {
 		display: none;
 	}
 	.index .search .btn {
@@ -215,6 +215,38 @@ body {
 .index .social a:hover:after{
 	border: 1px solid #00c1de;
     box-shadow: 0 0 20px rgba(0, 198, 226, 0.5);
+}
+.index .popbox{
+	position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    transition: all 0.5s ease-in;
+    display: none;
+}
+.index .popbox-in{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    background: white;
+}
+.index .popbox-in img{
+	width: 100%;
+	height: auto;
+}
+.index .popbox-close {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: -20px;
+    background: url(../images/close.svg) no-repeat center #999;
+    cursor: pointer;
 }
 /*博客-blog.html*/
 .blog .list {
