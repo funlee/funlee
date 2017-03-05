@@ -453,4 +453,12 @@ body {
 	margin-bottom: 0;
 	border-bottom: 1px solid #e8e8e8;
 }
+/*书虫*/
+.book .book-list img{
+	width: 100%;
+	height: auto;
+}
+.book .book-list .row{
+	margin-bottom: 20px;
+}
 
